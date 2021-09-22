@@ -133,7 +133,7 @@ header {
   }
 
   .tittle-logo {
-    width: 40%;
+    width: 30%;
   }
 
   .main-img {
@@ -143,11 +143,13 @@ header {
   }
 
   .main__tittle {
-    font-size: 1.95rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
   }
 
   .main__context {
-    font-size: 1.31rem;
+    font-size: 1.11rem;
+    font-weight: 400;
     margin-bottom: 4rem;
   }
 
@@ -166,14 +168,15 @@ header {
 @media screen and (min-width: 900px) {
   body {
     background: url(./images/bg-desktop.svg) hsl(257, 40%, 49%);
-    background-position: center top;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 105%;
   }
 
   .page-container {
     max-width: 1280px;
-    margin: 5%;
+    height: 90vh;
+    margin: 1rem;
+    position: relative;
   }
 
   header {
@@ -181,25 +184,30 @@ header {
   }
 
   .tittle-logo {
-    width: 18%;
+    width: 20%;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .grid-container {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    grid-template-rows: 100vh;
+  main {
+    text-align: left;
   }
 
   .main-img {
-    align-self: center;
-    width: 90%;
+    float: left;
+    width: 63%;
+    margin-right: 2.5rem;
+  }
+
+  .main__tittle {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .main__context {
+    text-align: left;
+  }
+
+  .register {
+    text-align: left;
   }
 
   .main__btn {
@@ -207,9 +215,10 @@ header {
   }
 
   .social {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    width: 20%;
+    position: absolute;
+    right: -0.1rem;
+    bottom: -0.1rem;
   }
 
   .icon {
