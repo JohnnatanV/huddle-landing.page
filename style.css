@@ -169,7 +169,9 @@ header {
   body {
     background: url(./images/bg-desktop.svg) hsl(257, 40%, 49%);
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .page-container {
